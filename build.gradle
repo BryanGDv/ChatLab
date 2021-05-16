@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'me.bryangaming.chatlab'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven{
+        name = 'nms-repo'
+        url = 'https://repo.codemc.org/repository/nms/'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
