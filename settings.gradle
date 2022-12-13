@@ -1,7 +1,0 @@
-rootProject.name = 'chatlab'
-include 'core'
-include 'api'
-include 'versions'
-include 'versions:legacyversion'
-findProject(':versions:legacyversion')?.name = 'legacyversion'
-
